@@ -81,9 +81,8 @@ print(logical_vector)
 
 *** =sct
 ```{r}
+msg_bad <- "You have got it wrong!!!"
+msg_success <- "Good work!!!"
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 
-
-test_error()
-
-success_msg("Good work!")
 ```
