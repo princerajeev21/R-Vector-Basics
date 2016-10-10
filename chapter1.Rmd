@@ -11,9 +11,9 @@ In this chapter we will create a vector.
 - A vector is a simple tool to store data.
 - To create a vector in R, we use the **c()** function aka combine function.
 - A vector is of mainly 3 types:.
-*       a. **Numeric Vector** - one that contains only numeric values (integer of float).
-*       b. **Character Vector** - one that contains either single character values or strings as values.
-*       c. **Logical Vector** - one that contains logical values (TRUE or FALSE).
+*       - **Numeric Vector** - one that contains only numeric values (integer of float).
+*       - **Character Vector** - one that contains either single character values or strings as values.
+*       - **Logical Vector** - one that contains logical values (TRUE or FALSE).
 
 - Here are some examples to get you started.
   
