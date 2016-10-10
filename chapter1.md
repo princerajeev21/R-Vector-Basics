@@ -6,7 +6,7 @@ description : In this chapter we will learn to create a vector
 --- type:NormalExercise lang:r xp:50 skills:1 key:0b8961fe9d
 Creating a Vector
 
-In this chapter we will create a vectpr.
+In this chapter we will create a vector.
 A vector is of mainly 3 types:
   a. Numeric Vector - one that contains only numeric values (integer of float).
   b. Character Vector - one that contains either single character values or strings as values.
