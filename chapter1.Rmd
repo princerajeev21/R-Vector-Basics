@@ -18,19 +18,19 @@ In this chapter we will create a vector.
 - Here are some examples to get you started.
 
 ##### Create a numeric vector
-'''code numeric_vector <- c(1,2,3,4,5)'''
+```code numeric_vector <- c(1,2,3,4,5)```
 
 ##### Create a float vector
-'''float_vector <- c(10.0,20.0,30.0,40.0,50.0)'''
+```float_vector <- c(10.0,20.0,30.0,40.0,50.0)```
 
 ##### Create a character vector with single characters
-'''scharacter_vector <- c('H','e','l','l','o')'''
+```scharacter_vector <- c('H','e','l','l','o')```
 
 ##### Create a character vector with single characters
-'''character_vector <- c('Hello','Python','Scala','Java','PHP')'''
+```character_vector <- c('Hello','Python','Scala','Java','PHP')```
 
 ##### Create a logical vector
-'''logical_vector <- c(TRUE,FALSE,FALSE,TRUE,FALSE)'''
+```logical_vector <- c(TRUE,FALSE,FALSE,TRUE,FALSE)```
 
 
 *** =instructions
