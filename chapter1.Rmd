@@ -86,3 +86,78 @@ msg_success <- "Good work!!!"
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 
 ```
+
+--- type:NormalExercise lang:r xp:50 skills:1 key:0b8961fe9d
+##Creating a Vector using the **:** operator
+
+You can also create create a vector using the **:** operator.
+Take a look at the example below:
+
+```
+vector_a <- 5:13
+```
+the output of this will be : 5,6,7,8,9,10,11,12,13
+
+The same thing can be done for a float vector
+
+```
+vector_b <- 4.5:10.5
+```
+
+The output of this will be : 4.5,5.5,6.5,7.5,8.5,9.5,10.5
+
+
+*** =instructions
+-create a vector a using : (colon) operator
+-create a float vector using : operator
+-create a vector in descending order using : operator
+
+*** =hint
+- You have to use : operator 
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+# create a vector a with values from 15 to 22
+
+# print the vector a
+
+# create a float vector b with values from 2.3 to 6.7
+
+# print the float vector
+
+# create a vector c with values from 10 to 2 in descending order
+
+# print the vector c
+
+```
+
+*** =solution
+```{r}
+# create a vector a with values from 15 to 22
+a <- 15:22
+# print the vector a
+a
+
+# create a float vector b with values from 2.3 to 6.7
+b <- 2.3:6.7
+# print the float vector
+b
+
+# create a vector c with values from 10 to 2 in descending order
+c <- 10:2
+# print the vector c
+c
+```
+
+*** =sct
+```{r}
+msg_bad <- "You have got it wrong!!!"
+msg_success <- "Good work!!!"
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+
+```
