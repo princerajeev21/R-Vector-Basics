@@ -156,12 +156,11 @@ c
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
-test_output_contains("a",
-                         incorrect_msg = "You have not used the same names for vectors")
-    success_msg("Nice job!")
-
-test_error()
-
+test_object(a,
+            eval = TRUE,
+            undefined_msg = "You have not used the same names for vectors",
+            incorrect_msg = "Did you use the same values?")
+   
 success_msg("Great work! Keep Going!!!")
 
 ```
