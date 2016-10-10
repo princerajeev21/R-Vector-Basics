@@ -63,8 +63,8 @@ rm(Movies)
 # create a numeric_vector with values from 21 to 30
 numeric_vector <- c(21:30)
 # print the numeric_vector
-pri
-nt(numeric_vector)
+print(numeric_vector)
+
 # create a character_vector with values from A to H
 character_vector <- c('A','B','C','D','E','F','G','H')
 # print the character_vector
