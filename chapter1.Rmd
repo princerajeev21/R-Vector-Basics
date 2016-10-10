@@ -154,8 +154,16 @@ c
 
 *** =sct
 ```{r}
-msg_bad <- "You have got it wrong!!!"
-msg_success <- "Good work!!!"
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+
+test_function("str", args = "object",
+              not_called_msg = "You didn't use : operator!",
+              incorrect_msg = "You didn't use : operator with the correct argument, `object`.")
+
+test_object("c")
+
+test_error()
+
+success_msg("Great work! Keep Going!!!")
 
 ```
