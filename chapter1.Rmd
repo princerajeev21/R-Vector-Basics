@@ -11,26 +11,26 @@ In this chapter we will create a vector.
 - A vector is a simple tool to store data.
 - To create a vector in R, we use the **c()** function aka combine function.
 - A vector is of mainly 3 types:.
-*       - **Numeric Vector** - one that contains only numeric values (integer of float).
-*       - **Character Vector** - one that contains either single character values or strings as values.
-*       - **Logical Vector** - one that contains logical values (TRUE or FALSE).
+*   - **Numeric Vector** - one that contains only numeric values (integer of float).
+*   - **Character Vector** - one that contains either single character values or strings as values.
+*   - **Logical Vector** - one that contains logical values (TRUE or FALSE).
 
 - Here are some examples to get you started.
-  
+
 ##### Create a numeric vector
-code numeric_vector <- c(1,2,3,4,5)
+'''code numeric_vector <- c(1,2,3,4,5)'''
 
 ##### Create a float vector
-float_vector <- c(10.0,20.0,30.0,40.0,50.0)
+'''float_vector <- c(10.0,20.0,30.0,40.0,50.0)'''
 
 ##### Create a character vector with single characters
-scharacter_vector <- c('H','e','l','l','o')
+'''scharacter_vector <- c('H','e','l','l','o')'''
 
 ##### Create a character vector with single characters
-character_vector <- c('Hello','Python','Scala','Java','PHP')
+'''character_vector <- c('Hello','Python','Scala','Java','PHP')'''
 
 ##### Create a logical vector
-logical_vector <- c(TRUE,FALSE,FALSE,TRUE,FALSE)
+'''logical_vector <- c(TRUE,FALSE,FALSE,TRUE,FALSE)'''
 
 
 *** =instructions
