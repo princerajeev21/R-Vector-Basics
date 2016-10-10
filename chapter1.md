@@ -1,68 +1,42 @@
 ---
 title       : Creating a Vector
 description : In this chapter we will learn to create a vector
-attachments :
-  slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
---- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:f245fee558
-## A really bad movie
 
-Have a look at the plot that showed up in the viewer to the right. Which type of movie has the worst rating assigned to it?
+--- type:NormalExercise lang:r xp:50 skills:1 key:0b8961fe9d
+Creating a Vector
+
+In this chapter we will create a vectpr.
+A vector is of mainly 3 types:
+  a. Numeric Vector - one that contains only numeric values (integer of float).
+  b. Character Vector - one that contains either single character values or strings as values.
+  c. Logical Vector - one that contains logical values (TRUE or FALSE).
 
 *** =instructions
-- Adventure
-- Action
-- Animation
-- Comedy
+- A vector is a simple tool to store data.
+- To create a vector in R, we use the c() function aka combine function.
+- Check how each of the vectors are created
+- code is mentoned in the exercise window
 
 *** =hint
-Have a look at the plot. Which color does the point with the lowest rating have?
+- click Submit to run the code
 
 *** =pre_exercise_code
 ```{r}
-# The pre exercise code runs code to initialize the user's workspace.
-# You can use it to load packages, initialize datasets and draw a plot in the viewer
+# Create a numeric vector
+numeric_vector <- c(1,2,3,4,5)
 
-movies <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
+# Create a float vector
+float_vector <- c(10.0,20.0,30.0,40.0,50.0)
 
-library(ggplot2)
+# Create a character vector with single characters
+scharacter_vector <- c('H','e','l','l','o')
 
-ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
-```
+# Create a character vector with single characters
+character_vector <- c('Hello','Python','Scala','Java','PHP')
 
-*** =sct
-```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-
-msg_bad <- "That is not correct!"
-msg_success <- "Exactly! There seems to be a very bad action movie in the dataset."
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
-```
-
---- type:NormalExercise lang:r xp:100 skills:1 key:0b8961fe9d
-## More movies
-
-In the previous exercise, you saw a dataset about movies. In this exercise, we'll have a look at yet another dataset about movies!
-
-A dataset with a selection of movies, `movie_selection`, is available in the workspace.
-
-*** =instructions
-- Check out the structure of `movie_selection`.
-- Select movies with a rating of 5 or higher. Assign the result to `good_movies`.
-- Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
-
-*** =hint
-- Use `str()` for the first instruction.
-- For the second instruction, you should use `...[movie_selection$Rating >= 5, ]`.
-- For the plot, use `plot(x = ..., y = ..., col = ...)`.
-
-*** =pre_exercise_code
-```{r}
-# You can also prepare your dataset in a specific way in the pre exercise code
-
-library(MindOnStats)
-data(Movies)
-movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"),c("Genre", "Rating", "Run")]
+# Create a logical vector
+logical_vector <- c(TRUE,FALSE,FALSE,TRUE,FALSE)
 
 # Clean up the environment
 rm(Movies)
@@ -70,30 +44,36 @@ rm(Movies)
 
 *** =sample_code
 ```{r}
-# movie_selection is available in your workspace
+# create a numeric_vector with values from 21 to 30
 
-# Check out the structure of movie_selection
+# print the numeric_vector
 
+# create a character_vector with values from A to H
 
-# Select movies that have a rating of 5 or higher: good_movies
+# print the character_vector
 
+# create a logical_vector with values from TRUE,FALSE,FALSE,TRUE,TRUE
 
-# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
+# print the logical_vector
 
 ```
 
 *** =solution
 ```{r}
-# movie_selection is available in your workspace
+# create a numeric_vector with values from 21 to 30
+numeric_vector <- c(21:30)
+# print the numeric_vector
+pri
+nt(numeric_vector)
+# create a character_vector with values from A to H
+character_vector <- c('A','B','C','D','E','F','G','H')
+# print the character_vector
+print(character_vector)
 
-# Check out the structure of movie_selection
-str(movie_selection)
-
-# Select movies that have a rating of 5 or higher: good_movies
-good_movies <- movie_selection[movie_selection$Rating >= 5, ]
-
-# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
-plot(good_movies$Run, good_movies$Rating, col = good_movies$Genre)
+# create a logical_vector with values from TRUE,FALSE,FALSE,TRUE,TRUE
+logical_vector <- c(TRUE,FALSE,FALSE,TRUE,TRUE)
+# print the logical_vector
+print(logical_vector)
 ```
 
 *** =sct
@@ -101,14 +81,10 @@ plot(good_movies$Run, good_movies$Rating, col = good_movies$Genre)
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
 test_function("str", args = "object",
-              not_called_msg = "You didn't call `str()`!",
-              incorrect_msg = "You didn't call `str(object = ...)` with the correct argument, `object`.")
+              not_called_msg = "You didn't write the code",
+              incorrect_msg = "You didn't something wrong.")
 
 test_object("good_movies")
-
-test_function("plot", args = "x")
-test_function("plot", args = "y")
-test_function("plot", args = "col")
 
 test_error()
 
