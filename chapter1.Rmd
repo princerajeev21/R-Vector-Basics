@@ -142,12 +142,10 @@ The output of this will be : 4.5, 5.5, 6.5, 7.5, 8.5, 9.5, 10.5
 a <- 15:22
 # print the vector a
 a
-
 # create a float vector b with values from 2.3 to 6.7
 b <- 2.3:6.7
 # print the float vector
 b
-
 # create a vector c with values from 10 to 2 in descending order
 c <- 10:2
 # print the vector c
