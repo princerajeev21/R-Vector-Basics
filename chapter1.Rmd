@@ -80,7 +80,7 @@ print(logical_vector)
 
 *** =sct
 ```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+
 
 test_error()
 
