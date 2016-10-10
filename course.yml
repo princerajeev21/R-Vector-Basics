@@ -1,8 +1,9 @@
 title            : R Vector Basics
-instructors      : Rajeev Mishra
-  - princealexster@gmail.com
-  - Data Scientist
+instructors      :
+ - princealexster@gmail.com
 description      : This is a basic course on vectors in R and operations that cam be performed on it.
 university       : DataCamp
 difficulty_level : 1
 time_needed      : 1 hour
+
+
