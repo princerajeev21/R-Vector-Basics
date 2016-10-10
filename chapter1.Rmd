@@ -7,23 +7,9 @@ description : In this chapter we will learn to create a vector
 Creating a Vector
 
 In this chapter we will create a vector.
-A vector is of mainly 3 types:
-  a. Numeric Vector - one that contains only numeric values (integer of float).
-  b. Character Vector - one that contains either single character values or strings as values.
-  c. Logical Vector - one that contains logical values (TRUE or FALSE).
 
-*** =instructions
-- A vector is a simple tool to store data.
-- To create a vector in R, we use the c() function aka combine function.
-- Check how each of the vectors are created
-- code is mentoned in the exercise window
-
-*** =hint
-- click Submit to run the code
-
-*** =pre_exercise_code
-```{r}
-# Create a numeric vector
+  
+  # Create a numeric vector
 numeric_vector <- c(1,2,3,4,5)
 
 # Create a float vector
@@ -38,8 +24,24 @@ character_vector <- c('Hello','Python','Scala','Java','PHP')
 # Create a logical vector
 logical_vector <- c(TRUE,FALSE,FALSE,TRUE,FALSE)
 
-# Clean up the environment
-rm(Movies)
+
+*** =instructions
+- A vector is a simple tool to store data.
+- To create a vector in R, we use the c() function aka combine function.
+- Check how each of the vectors are created
+- code is mentoned in the exercise window
+
+A vector is of mainly 3 types:
+  a. Numeric Vector - one that contains only numeric values (integer of float).
+  b. Character Vector - one that contains either single character values or strings as values.
+  c. Logical Vector - one that contains logical values (TRUE or FALSE).
+
+*** =hint
+- click Submit to run the code
+
+*** =pre_exercise_code
+```{r}
+
 ```
 
 *** =sample_code
