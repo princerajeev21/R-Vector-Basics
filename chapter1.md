@@ -80,12 +80,6 @@ print(logical_vector)
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
-test_function("str", args = "object",
-              not_called_msg = "You didn't write the code",
-              incorrect_msg = "You didn't something wrong.")
-
-test_object("good_movies")
-
 test_error()
 
 success_msg("Good work!")
